@@ -2,41 +2,41 @@ package core
 
 import "time"
 
-type DeteccaoAntesUpdateEvent struct {
+type DeteccaoAntesUploadEvent struct {
 	CreatedAt time.Time `json:"created_at"`
 	Deteccao  Deteccao  `json:"deteccao"`
 }
 
-type DeteccaoDepoisUpdateEvent struct {
+type DeteccaoDepoisUploadEvent struct {
 	CreatedAt time.Time `json:"created_at"`
 	Deteccao  Deteccao  `json:"deteccao"`
 }
 
-type DeteccaoResultadoUpdateEvent struct {
+type DeteccaoResultadoUploadEvent struct {
 	CreatedAt time.Time `json:"created_at"`
 	Deteccao  Deteccao  `json:"deteccao"`
 }
 
-func NewDeteccaoAntesUpdateEvent(deteccao Deteccao) DeteccaoAntesUpdateEvent {
-	return DeteccaoAntesUpdateEvent{time.Now(), deteccao}
+func NewDeteccaoAntesUploadEvent(deteccao Deteccao) DeteccaoAntesUploadEvent {
+	return DeteccaoAntesUploadEvent{time.Now(), deteccao}
 }
 
-func (e DeteccaoAntesUpdateEvent) Name() string {
+func (e DeteccaoAntesUploadEvent) Name() string {
 	return DETECCOES_DELETE_EVENT
 }
 
-func NewDeteccaoDepoisUpdateEvent(deteccao Deteccao) DeteccaoDepoisUpdateEvent {
-	return DeteccaoDepoisUpdateEvent{time.Now(), deteccao}
+func NewDeteccaoDepoisUploadEvent(deteccao Deteccao) DeteccaoDepoisUploadEvent {
+	return DeteccaoDepoisUploadEvent{time.Now(), deteccao}
 }
 
-func (e DeteccaoDepoisUpdateEvent) Name() string {
+func (e DeteccaoDepoisUploadEvent) Name() string {
 	return DETECCOES_DELETE_EVENT
 }
 
-func NewDeteccaoResultadoUpdateEvent(deteccao Deteccao) DeteccaoResultadoUpdateEvent {
-	return DeteccaoResultadoUpdateEvent{time.Now(), deteccao}
+func NewDeteccaoResultadoUploadEvent(deteccao Deteccao) DeteccaoResultadoUploadEvent {
+	return DeteccaoResultadoUploadEvent{time.Now(), deteccao}
 }
 
-func (e DeteccaoResultadoUpdateEvent) Name() string {
+func (e DeteccaoResultadoUploadEvent) Name() string {
 	return DETECCOES_DELETE_EVENT
 }
