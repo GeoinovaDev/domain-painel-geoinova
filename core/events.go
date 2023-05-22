@@ -8,4 +8,8 @@ const (
 	DETECCOES_CREATE_EVENT = "deteccoes.created"
 	DETECCOES_DELETE_EVENT = "deteccoes.deleted"
 	DETECCOES_UPDATE_EVENT = "deteccoes.updated"
+
+	DETECCAO_ANTES_UPLOAD_EVENT     = "deteccao.antes.upload"
+	DETECCAO_DEPOIS_UPLOAD_EVENT    = "deteccao.depois.upload"
+	DETECCAO_RESULTADO_UPLOAD_EVENT = "deteccao.resultado.upload"
 )
