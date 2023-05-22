@@ -22,7 +22,7 @@ func NewDeteccaoAntesUploadEvent(deteccao Deteccao) DeteccaoAntesUploadEvent {
 }
 
 func (e DeteccaoAntesUploadEvent) Name() string {
-	return DETECCOES_DELETE_EVENT
+	return DETECCAO_ANTES_UPLOAD_EVENT
 }
 
 func NewDeteccaoDepoisUploadEvent(deteccao Deteccao) DeteccaoDepoisUploadEvent {
@@ -30,7 +30,7 @@ func NewDeteccaoDepoisUploadEvent(deteccao Deteccao) DeteccaoDepoisUploadEvent {
 }
 
 func (e DeteccaoDepoisUploadEvent) Name() string {
-	return DETECCOES_DELETE_EVENT
+	return DETECCAO_DEPOIS_UPLOAD_EVENT
 }
 
 func NewDeteccaoResultadoUploadEvent(deteccao Deteccao) DeteccaoResultadoUploadEvent {
@@ -38,5 +38,5 @@ func NewDeteccaoResultadoUploadEvent(deteccao Deteccao) DeteccaoResultadoUploadE
 }
 
 func (e DeteccaoResultadoUploadEvent) Name() string {
-	return DETECCOES_DELETE_EVENT
+	return DETECCAO_RESULTADO_UPLOAD_EVENT
 }

@@ -12,5 +12,5 @@ func NewAnaliseDeleteEvent(analise Analise) AnaliseDeleteEvent {
 }
 
 func (e AnaliseDeleteEvent) Name() string {
-	return ANALISE_UPDATE_EVENT
+	return ANALISE_DELETE_EVENT
 }
