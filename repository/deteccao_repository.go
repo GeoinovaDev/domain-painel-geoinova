@@ -3,6 +3,7 @@ package repository
 import "github.com/GeoinovaDev/domain-painel-geoinova/core"
 
 type DeteccaoRepository interface {
+	Inserir(int, core.Deteccao) error
 	Update(core.Deteccao) error
 	Delete(core.Deteccao) error
 	UpdateBucket(core.Deteccao) error
